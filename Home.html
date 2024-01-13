@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d47b63a2c8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+
+            <nav class="fill">
+
+           <img src="Images/logo-png-removebg-preview.png" id="logo" alt="Portfolio Logo">     
+
+           <ul id="sidemenu">
+
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Works</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+
+           </ul>
+           <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+<div class="headertext">
+
+    <span id="element"></span>
+    <h1 class="MainHeading">Hi, I'm<span> Sahil Dande </span><br>CSE Student !</h1>
+    
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Welcome To My PortFolio','Software Application Developer', ' Web Developer', 'Power Bi Data Analysis Enthusiast'],
+          typeSpeed: 50,
+        });
+      </script>
+</div>
+
+        </div>
+    </div>
+
+
+   <!-- --------------------About---------------------->
+    <div id="about">
+        
+        <div class="container">
+
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/My Pic.jpg" alt="My-Image">
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                  <p>Hello visitor! This is my portfolio website developed using html, css & js. I'm Sahil Dande from Washim Maharashtra, currently
+                    pursuing my Engineering in Computer Science & Engineering at Prof. Ram Meghe Institute of Technology & Research (PRMIT&R) Badnera.
+                    This portfolio website is created to practice & study the concepts of web-development by myself. I have introduced my profession,
+                    interests, education, projects, skills & many more things in this portfolio.</p>
+
+                     <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                     </div>
+                     <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Data Analysis</span><br>Microsoft Power Bi</li>
+                            <li><span>Web Development</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Software Application Development</span><br>Developing Java Software Applications</li>
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="certifications">
+                        <ul>
+                            <li><span>CCC</span><br>Certificate of Course On Computer Concepts conducted by National Institute Of Electronics & Information Technology(NIELIT)</li>
+                            <li><span>Advance Java</span><br>Certificate of Course in Advance Java conducted by Maharashtra Center For Carrer Education (MCCE)</li>
+                            <li><span>Web Development</span>Certificate of Course in Web Development conducted by Maharashtra Center For Carrer Education(MCCE)<br></li>
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019</span><br>Passed 10th std from Bakliwal School, Washim with 90.60%</li>
+                            <li><span>2022</span><br>MSBTE Diploma In Information Technology from Government Polytechnic, Washim with 88.90%</li>
+                            <li><span>2024</span><br>3rd Year in B.E In Computer Science And Engineering at PRMIT&R, Amravati</li>
+                        </ul>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------- Services------------------- -->
+
+    <div id="services">
+        
+        <div class="container">
+
+            <h1 class="sub-title">My Services</h1>
+
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-java fa-beat" id="java-icon"></i>
+                    <h2>Java App Design</h2>
+                    <p>Completed cources in Core Java & Advaned Java. Looks forward to design interactive interfaces & created
+                    java applications. Very familiar to java programming as I'm a diploma student. Looking forward to create 
+                    & learn more.</p>
+                        <a href="Images/Java Certifications.pdf" download>View Certifications</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code fa-beat"></i>
+                    <h2>Web Design</h2>
+                    <p>Also completed web-development courses. Completed internship at VISANET SOFTWARE PRIVATE LIMITED. Duration 
+                        Period 4 weeks From Augest-2021 to Sept-2021. Created my projects such as Gym Website, food website & 
+                        currently working on this portfolio website.</p>
+                        <a href="Images/Web Designing Certifications.pdf" download>View Certifications</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-chart-line fa-beat"></i>
+                    <h2>Data Analysis</h2>
+                    <p>New to this platform but learning & growing my knowledge step by step. Recently done a virtual internship at PwC Switzerland
+                       in Power Bi & Completed a certification of Udemy in Power Bi Maven Analytics.</p>
+                        <a href="Images/Data Analysis Power Bi Certifications.pdf" download>View Certifications</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+<!-- --------------------- My Work------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/DBMS Project Output 1.png" alt="">
+                    <div class="layer">
+                        <h3>Smart ATM Application</h3>
+                        <p>This app provides all the features of an ATM machine such as bank transfer operations. It has features 
+                            such as check balance, withdraw cash, pin change, etc. This is purely based on concepts of Advanced 
+                            Java, Java & MySQL Database.
+                        </p>
+                        <a href="Images/SmartATMApplication Preview (-Sahil Dande).pdf" download><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/Screenshot 2024-01-05 205246.png" alt="">
+                    <div class="layer">
+                        <h3>HardRock Gym & Fitness Website</h3>
+                        <p>This is a website created with html, css, js & php. This website provides the services and information 
+                            of a gym & fitness organisation. The clients can surf this site to get details about the club & also 
+                            can contact to the officials by filling various forms.
+                        </p>
+                        <a href="https://github.com/SahilDande/HardRock-Gym-And-Fitness-Web-Project"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/Screenshot 2023-12-18 155125.png" alt="">
+                    <div class="layer">
+                        <h3>Adventure Works Power Bi Dashboard</h3>
+                        <p>This is a project which is created with the Microsoft Power Bi. This project has all the analysed data 
+                            provided by adventure works and also contains various interactive & dynamic data visualization tools.
+                        </p>
+                        <a href="https://github.com/SahilDande/Adventure-Works-Report-Microsoft-Power-Bi-"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/SahilDande" class="btn"><span>See more</span></a>
+        </div>
+    </div>
+
+    <!-- --------------------- Contact------------------- -->
+    <div id="contact">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>sahildande2019@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i>8459667601</p>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/sahil_dande_11"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/sahil-dande-3ba601290"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/SahilDande"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://facebook.com/Sahil Dande"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <a href="Images/Sahil Resume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <!-- ----------------------Copyright------------------------------->
+        <div class="copyright">
+            <div class="row1">
+                <div class="icon">
+                    <h3>Follow Me</h3>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/sahil_dande_11"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/sahil-dande-3ba601290"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/SahilDande"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://facebook.com/Sahil Dande"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://wa.me/918459667601/?text= Write Me Here ...."><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="quick-links">
+                <h3>Quick Links</h3>
+               
+
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Works</a></li>
+                    <li><a href="#contact">Contact</a></li>
+        
+                   
+                </div>
+            </div>
+            <p>Copyright 2024 ©<span> Sahil Dande</span> All Rights Reserved.</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname)
+        {
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active-link");
+            }
+            
+            for(tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu()
+        {
+            sidemenu.style.right= "0";
+        }
+        function closemenu()
+        {
+            sidemenu.style.right= "-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwfkNGDeW8Z4yGffFOIQJ1NOilqvoles1kzkan0eInrwXTFffzCmMOMcHZ5ec2OxIPb/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Your response submitted successfully !"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },4000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
